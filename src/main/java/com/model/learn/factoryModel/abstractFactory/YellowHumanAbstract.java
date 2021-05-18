@@ -1,12 +1,12 @@
-package com.model.learn.factoryModel.realModel;
+package com.model.learn.factoryModel.abstractFactory;
 
 /**
  * @author liu
  * @version 1.0
  * @description
- * @createDate 2021/4/10
+ * @date 5/18/21
  */
-public class YellowHuman implements Human {
+public abstract class YellowHumanAbstract implements Human {
 
     @Override
     public void talk() {
@@ -19,4 +19,7 @@ public class YellowHuman implements Human {
         System.out.println("我的肤色是黄色");
         return "yellow";
     }
+
+
+
 }

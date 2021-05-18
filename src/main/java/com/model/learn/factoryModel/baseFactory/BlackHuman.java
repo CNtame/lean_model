@@ -1,4 +1,4 @@
-package com.model.learn.factoryModel.moreFactory;
+package com.model.learn.factoryModel.baseFactory;
 
 /**
  * @author liu

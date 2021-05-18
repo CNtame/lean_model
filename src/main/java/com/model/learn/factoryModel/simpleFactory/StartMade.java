@@ -1,4 +1,4 @@
-package com.model.learn.factoryModel.realModel;
+package com.model.learn.factoryModel.simpleFactory;
 
 /**
  * @author liu

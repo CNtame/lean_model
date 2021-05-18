@@ -1,4 +1,4 @@
-package com.model.learn.factoryModel.realModel;
+package com.model.learn.factoryModel.simpleFactory;
 
 /**
  * @author liu
@@ -15,4 +15,6 @@ public abstract class AbstractHumanFactory {
      * @return
      */
     public abstract <T extends Human> T createHuman(Class<T> c);
+
+    public abstract <T extends Human> T createHuman(String type);
 }

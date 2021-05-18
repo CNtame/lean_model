@@ -1,4 +1,4 @@
-package com.model.learn.factoryModel.realModel;
+package com.model.learn.factoryModel.baseFactory;
 
 /**
  * @author liu
@@ -6,7 +6,7 @@ package com.model.learn.factoryModel.realModel;
  * @description
  * @createDate 2021/4/10
  */
-public class WhiteHuman implements Human{
+public class WhiteHuman implements Human {
 
     @Override
     public String getColor() {

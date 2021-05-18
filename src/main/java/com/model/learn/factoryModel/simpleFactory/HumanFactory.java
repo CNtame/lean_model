@@ -1,4 +1,4 @@
-package com.model.learn.factoryModel.realModel;
+package com.model.learn.factoryModel.simpleFactory;
 
 /**
  * @author liu
@@ -13,6 +13,17 @@ public class HumanFactory extends AbstractHumanFactory {
         Human human = null;
         try {
             human =(T) Class.forName(c.getName()).newInstance();
+        } catch (Exception e) {
+            System.out.println("人种生成错误");
+        }
+        return (T) human;
+    }
+
+    @Override
+    public <T extends Human> T createHuman(String type) {
+        Human human = null;
+        try {
+            human =(T) Class.forName(type).newInstance();
         } catch (Exception e) {
             System.out.println("人种生成错误");
         }
